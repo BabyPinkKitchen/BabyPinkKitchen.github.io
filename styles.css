@@ -1,0 +1,102 @@
+/* Reset CSS */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: left; /* コンテナ内のテキストを左詰めにする */
+}
+
+header {
+    background-color: #f844ad;
+    color: #000000;
+    padding: 10px 0;
+    display: flex; /* ヘッダー内の要素を横並びにするために flexbox を使用 */
+    align-items: center; /* 要素を縦方向中央に揃える */
+}
+
+header img {
+    width: 60px; /* 画像の幅を指定 */
+    margin-right: 10px; /* 画像の右側に少し余白を設定 */
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px; /* ナビゲーションメニュー内のリンクのフォントサイズを指定 */
+}
+
+.section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #672600;
+    text-align: center;
+    padding: 10px 0;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    margin-left: 10px; /* 画像とテキストの間の余白を設定 */
+    font-size: 40px; /* テキストのフォントサイズを設定 */
+    color: #ffffff; /* テキストの色を設定 */
+}
+
+.menu-images {
+    display: flex;
+    justify-content: space-around; /* 画像を均等に配置 */
+    margin-top: 20px; /* 画像とメニューの間の余白を設定 */
+}
+
+.menu-images img {
+    width: 35%; /* 画像の幅を設定 */
+    height: auto; /* 高さを自動調整 */
+}
+
+.contact-image {
+    width: 50px; /* 画像の幅を指定 */
+    height: auto; /* 高さを自動調整 */
+}
+
+.header-image {
+    text-align: center; /* 画像を中央揃えにする */
+    margin-top: 0px; /* ヘッダーとの間に余白を設定 */
+}
+
+.header-image img {
+    width: 1200px; /* 画像の幅を指定 */
+}
+
+.section-divider {
+    border: none;
+    border-bottom: 1px solid #ddd; /* 下線を設定 */
+    margin-bottom: 10px; /* 線の下に余白を追加 */
+}
