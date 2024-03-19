@@ -59,44 +59,47 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-.logo-container {
-    display: flex;
-    align-items: center;
-}
 
-.company-name {
-    margin-left: 10px; /* 画像とテキストの間の余白を設定 */
-    font-size: 40px; /* テキストのフォントサイズを設定 */
-    color: #ffffff; /* テキストの色を設定 */
-}
+/* スマホやタブレットなどの小さい画面に対応するスタイル */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* コンテナの幅を調整 */
+    }
 
-.menu-images {
-    display: flex;
-    justify-content: space-around; /* 画像を均等に配置 */
-    margin-top: 20px; /* 画像とメニューの間の余白を設定 */
-}
+    header {
+        flex-direction: column; /* ヘッダー内の要素を縦並びにする */
+        text-align: center; /* テキストを中央揃えにする */
+    }
 
-.menu-images img {
-    width: 35%; /* 画像の幅を設定 */
-    height: auto; /* 高さを自動調整 */
-}
+    header img {
+        margin: 0 auto 10px; /* 画像を中央揃えにし、下に少し余白を設定 */
+    }
 
-.contact-image {
-    width: 50px; /* 画像の幅を指定 */
-    height: auto; /* 高さを自動調整 */
-}
+    nav ul {
+        margin-top: 10px; /* ナビゲーションリストとの間に余白を追加 */
+    }
 
-.header-image {
-    text-align: center; /* 画像を中央揃えにする */
-    margin-top: 0px; /* ヘッダーとの間に余白を設定 */
-}
+    nav ul li {
+        display: block; /* リストアイテムをブロックレベル要素に変更 */
+        margin-bottom: 10px; /* リストアイテム間の余白を追加 */
+    }
 
-.header-image img {
-    width: 1200px; /* 画像の幅を指定 */
-}
+    .menu-images {
+        flex-direction: column; /* 画像を縦並びにする */
+        align-items: center; /* 画像を中央揃えにする */
+    }
 
-.section-divider {
-    border: none;
-    border-bottom: 1px solid #ddd; /* 下線を設定 */
-    margin-bottom: 10px; /* 線の下に余白を追加 */
+    .menu-images img {
+        width: 100%; /* 画像の幅を幅いっぱいにする */
+        height: auto; /* 高さを自動調整 */
+        margin-bottom: 20px; /* 画像間に余白を追加 */
+    }
+
+    .contact-image {
+        width: 40px; /* 画像の幅を指定 */
+    }
+
+    .header-image img {
+        width: 100%; /* 画像の幅を幅いっぱいにする */
+    }
 }
