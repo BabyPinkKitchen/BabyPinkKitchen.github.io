@@ -15,6 +15,12 @@ body {
     text-align: left; /* コンテナ内のテキストを左詰めにする */
 }
 
+.company-name {
+    margin-left: 10px; /* 画像とテキストの間の余白を設定 */
+    font-size: 50px; /* テキストのフォントサイズを調整 */
+    color: #ffffff; /* テキストの色を設定 */
+}
+
 header {
     background-color: #f844ad;
     color: #000000;
@@ -24,7 +30,7 @@ header {
 }
 
 header img {
-    width: 60px; /* 画像の幅を指定 */
+    width: 50px; /* 画像の幅を指定 */
     margin-right: 10px; /* 画像の右側に少し余白を設定 */
 }
 
@@ -60,10 +66,30 @@ footer {
     padding: 10px 0;
 }
 
+.menu-images {
+    display: flex; /* 画像を横並びにする */
+    justify-content: space-between; /* 画像を等間隔に配置 */
+    flex-wrap: wrap; /* 画像が横幅を超えた場合に折り返す */
+}
+
+.menu-images img {
+    width: calc(50% - 10px); /* 画像の幅を50%に設定し、間隔を考慮して調整 */
+    margin-bottom: 20px; /* 画像間に余白を設定 */
+}
+
+.contact-image {
+    width: 50px; /* 画像の幅を調整 */
+    height: auto; /* 高さを自動調整 */
+}
+
 /* スマホやタブレットなどの小さい画面に対応するスタイル */
 @media screen and (max-width: 768px) {
     .container {
         width: 90%; /* コンテナの幅を調整 */
+    }
+
+    .company-name {
+        font-size: 45px; /* テキストのフォントサイズをスマホ向けに調整 */
     }
 
     header {
@@ -85,14 +111,14 @@ footer {
     }
 
     .menu-images {
+        display: flex; /* 画像を横並びにする */
         flex-direction: column; /* 画像を縦並びにする */
         align-items: center; /* 画像を中央揃えにする */
     }
 
     .menu-images img {
         width: 100%; /* 画像の幅を幅いっぱいにする */
-        height: auto; /* 高さを自動調整 */
-        margin-bottom: 20px; /* 画像間に余白を追加 */
+        margin-bottom: 20px; /* 画像間に余白を設定 */
     }
 
     .contact-image {
@@ -102,4 +128,8 @@ footer {
     .header-image img {
         width: 100%; /* 画像の幅を幅いっぱいにする */
     }
+}
+
+.contact-image {
+    width: 40px; /* スマホ向けに画像の幅を調整 */
 }
