@@ -14,7 +14,20 @@
     section:last-child {
         border-bottom: none;
     }
-</style>
+
+    /* スマホやタブレットなどの小さい画面に対応するスタイル */
+    @media screen and (max-width: 768px) {
+        .logo-container {
+            text-align: center; /* ロゴと会社名を中央揃えにする */
+        }
+        nav ul {
+            text-align: center; /* ナビゲーションリストを中央揃えにする */
+        }
+        .menu-images img {
+            width: 100%; /* メニュー画像を幅いっぱいにする */
+        }
+    }
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
