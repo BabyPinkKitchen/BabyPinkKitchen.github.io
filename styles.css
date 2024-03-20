@@ -60,8 +60,8 @@ nav ul li a {
 }
 
 footer {
-    background-color: #ffffff;
-    color: #672600;
+    background-color: #f844ad;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
 }
@@ -85,7 +85,23 @@ footer {
 /* スマホやタブレットなどの小さい画面に対応するスタイル */
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%; /* コンテナの幅を調整 */
+        flex-direction: column; /* 縦表示に変更 */
+        text-align: left;
+    }
+
+    /* 各セクションの幅を調整 */
+    #about, #events, #menu, #contact {
+        width: 100%; /* 画面幅いっぱいに広げる */
+    }
+
+    /* 各セクションの余白を設定 */
+    #about, #events, #menu {
+        margin-right: 20px; /* セクション間に余白を設定 */
+    }
+
+    /* お問い合わせのセクションはセクションの最後なので、右側の余白を0にする */
+    #contact {
+        margin-right: 0;
     }
 
     .company-name {
@@ -102,12 +118,13 @@ footer {
     }
 
     nav ul {
-        margin-top: 10px; /* ナビゲーションリストとの間に余白を追加 */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     nav ul li {
-        display: block; /* リストアイテムをブロックレベル要素に変更 */
-        margin-bottom: 10px; /* リストアイテム間の余白を追加 */
+        margin-right: 20px; /* リストアイテム間の右マージンを設定 */
     }
 
     .menu-images {
@@ -128,8 +145,8 @@ footer {
     .header-image img {
         width: 100%; /* 画像の幅を幅いっぱいにする */
     }
-}
 
-.contact-image {
+    .contact-image {
     width: 40px; /* スマホ向けに画像の幅を調整 */
+    }
 }
